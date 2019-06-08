@@ -147,8 +147,8 @@ $('.reset-btn,#close-id').off('click').on('click',function(e){
 
 	zoomed_image=false;
 	setTimeout(function(){
-		$('.hotspot').fadeIn();
-	 },1000)
+		$('.hotspot').fadeIn(1000);
+	 },200)
 	 setTimeout(function(){
 		$('#text_container').css('visibility','visible');
 		$('#heading_text').attr('aria-label',$('#heading_text').text()).css('visibility','visible');
@@ -156,7 +156,7 @@ $('.reset-btn,#close-id').off('click').on('click',function(e){
 	 setTimeout(function(){
 		if( /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent) ) {
 			
-		}else {$('#focus_guard_1').focus();}
+		}else {$('#toggle_1').focus();}
 	 },230);
 		 
 	  $('.reset-btn').fadeOut();
